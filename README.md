@@ -3,7 +3,7 @@
 **Version:** 1.0  
 **Build:** 063025  
 **Developer:** Kyle Genesis F. Lambot (@ProtonyteTV)
-
+**Source code:** Soon
 ---
 
 ## What is jedToolKit Lite?
