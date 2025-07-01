@@ -1,111 +1,78 @@
-# 📦 jedToolKit Lite
+# 🧰 jedToolKit
 
-**Version:** 1.0  
-**Build:** 063025  
-**Developer:** Kyle Genesis F. Lambot (@ProtonyteTV)
-**Source code:** Soon
+**Version:** 1.0.070125  
+**Developer:** Kyle Genesis Fernando Lambot ([@ProtonyteTV](https://github.com/ProtonyteTV))  
+**Powered by:** `jed` & `jedOS`
 
----
-
-## What is jedToolKit Lite?
-
-`jedToolKit Lite` is a lightweight, modular toolkit for **jailed iOS devices**—built as a fun proof of concept.  
-It’s designed for users who want simple utilities without needing to jailbreak.
+`jedToolKit` is a modular diagnostics and utility suite built for **jailed iOS devices** running **iOS 13 and above** — no jailbreak required.
 
 ---
 
-## Included Modules (v1.0)
+## 📦 Included Modules
 
-- **jedPhoneInfo** – View basic device info
-- **jedHWChecker** – Test hardware (Touch ID, Face ID, sensors, etc.)
-- **jedMonitor** – Monitor memory, storage, and thermal state (like Activity Monitor)
-- **jedTerminal Lite** – A fun mock terminal interface with useful output
-- **jedSysPatcher** – Install configuration profiles (e.g., block updates, Safari tweaks)
-- **ShortcutThemer** – Customize icons using Shortcuts & .mobileconfig files
-- **IPSW Download Helper** – Get iOS IPSW files with version/device filtering
-
----
-
-## About the App
-
-> “I made this app as a proof of concept—just for fun.  
-> It's a basic toolkit for iOS, nothing fancy, just something simple to try out.  
-> But I’ll be adding more features soon.” – *Kyle Genesis Fernando Lambot*
+- 📱 **jedPhoneInfo** – Device info viewer + iOS compatibility via `jedOS`
+- 🔧 **jedHWChecker** – Hardware tests: sensors, camera, Face ID, mic, etc.
+- 📊 **jedMonitor** – Real-time system usage monitor (CPU, RAM, storage)
+- 🧪 **jedTerminal Lite** – Terminal-style interface for quick commands
+- 🧩 **jedSysPatcher** – Installs OTA blockers and config profiles
+- 🎨 **ShortcutThemer** – Customize iOS icons using the Shortcuts method
+- 📥 **IPSW Download Helper** – Direct download links for firmware
 
 ---
 
-## Privacy Focused
+## ⚙️ Architecture
 
-- No data collection  
-- No ads, no trackers  
-- Everything runs offline and locally  
-- Only connects to Apple’s servers when downloading IPSWs or applying config profiles
+### `jed` — *Jailed Environment Diagnostics*  
+The invisible engine that powers all modules in `jedToolKit`.  
+Manages compatibility logic, internal behaviors, and shared utilities.
 
-More info in [Privacy Policy](#).
+### `jedOS` — *Jailed Environment Diagnostics Operating Support*  
+A compatibility reference layer that evaluates which modules are stable or limited on your current iOS version.  
+It does not modify or replace iOS — purely informational.
 
----
-
-## Developer’s Credit
-
-<p align="left">
-  <img src="./Assets/pfp1.jpeg" width="80" height="80" style="border-radius: 50%;" alt="Kyle Profile Picture">
-</p>
-
-**Kyle Genesis Fernando Lambot**  
-Developer of jedToolKit Lite  
-Made with coffee, passion, and curiosity.
+> ⚠️ `jedOS` Disclaimer:  
+> `jedOS` is **not a custom OS**. It does not modify, patch, or emulate iOS.  
+> It is a diagnostic tool designed to help users assess feature compatibility per iOS version.
 
 ---
 
-## Soul Behind “jed”
+## 🚀 Requirements
 
-<p align="left">
-  <img src="./Assets/pfp2.jpeg" width="70" height="70" style="border-radius: 50%;" alt="Jediah's Profile Symbol">
-</p>
-
-The name “jed” honors **Jediah**, the quiet inspiration and bassist who fueled the soul of this project.  
-Every module, line of code, and vision carries that calm rhythm.
-
-> "Just a toolkit, but with a heartbeat."
-
----
-## System Requirements
-
-jedToolKit Lite is optimized for compatibility with modern iPhone hardware running iOS 13.0 and later. Please review the following requirements for proper usage:
-
-- Supported Devices: iPhone models only
-- Supported iOS Versions: iOS 13.0 and later
-- Device Status: Compatible with non-jailbroken (jailed) devices
-- Network Usage: Most modules function entirely offline; specific tools (e.g., IPSW Downloader) require internet access
-- Storage Footprint: Lightweight, under 10MB on disk
-
-Note: iPads and iPod touch models are not officially supported. Using these devices may result in UI inconsistencies or limited feature availability.
+- ✅ iOS 13.0 and above
+- ✅ No jailbreak required
+- ✅ Works on iPhone only (for now)
 
 ---
 
-## Disclaimer on jedOS
+## 🧪 Technology Stack
 
-The `jedOS` name and references throughout the application do not correspond to an actual operating system or firmware. The implementation of `jedOS` is conceptual and intended solely for informational and aesthetic purposes.
-
-### What `jedOS` is:
-- A version labeling scheme used to map your current iOS version to a named identifier (codename)
-- A compatibility checker that determines whether certain tools or modules are supported on your version of iOS
-- A thematic and UI component designed to enhance the user experience
-
-### What `jedOS` is not:
-- Not a custom operating system, firmware, or modification layer
-- Not a jailbreak, patch, or exploit
-- Not a real software environment or runtime
-- Not intended to spoof or override the device’s native system version
-
-The use of `jedOS` is strictly for informational display and internal logic. It does not modify system behavior or alter any part of the operating system.
+- Language: `Swift 5.0+`
+- Frameworks: `UIKit`
+- Architecture: Modular, jailed, sandbox-safe
+- UI: Custom navigation + card-based interface
 
 ---
 
-## 📬 Feedback
+## 📄 License
 
-Found a bug? Have suggestions?  
-Feel free to reach out via [protoapps_protonytetv@gmail.com](mailto:protoapps_protonytetv@gmail.com)
+MIT License  
+© 2025 Kyle Lambot  
+Built for educational, diagnostic, and utility purposes.
 
 ---
+
+## ❤️ Built With
+
+- `Swift` — Fast & native
+- `☕ Coffee` — To stay up all night
+- `❤️ Love` — From developer to user
+- `🎸 Bass` — To keep the rhythm going
+
+---
+
+## 🌐 Visit
+
+**jedDev** — [https://jeddev.ct.ws](https://jeddev.ct.ws)  
+More tools and updates available on the official site.
+
 
