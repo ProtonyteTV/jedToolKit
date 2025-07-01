@@ -1,7 +1,7 @@
 # 🧰 jedToolKit
 
 **Version:** 1.0.070125  
-**Developer:** Kyle Genesis Fernando Lambot ([@ProtonyteTV](https://github.com/ProtonyteTV))  
+**Developer:** Kyle Genesis Fernando Lambot ([@ProtonyteTV](https://x.com/ProtonyteTV))  
 **Powered by:** `jed` & `jedOS`
 
 **Source Code:** Soon
