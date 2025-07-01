@@ -16,8 +16,8 @@
 - 🔧 **jedHWChecker** – Hardware tests: sensors, camera, Face ID, mic, etc.
 - 📊 **jedMonitor** – Real-time system usage monitor (CPU, RAM, storage)
 - 🧪 **jedTerminal Lite** – Terminal-style interface for quick commands
-- 🧩 **jedSysPatcher** – Installs OTA blockers and config profiles
-- 🎨 **ShortcutThemer** – Customize iOS icons using the Shortcuts method
+- 🧩 **jedSysPatcher** – Installs OTA blockers on iOS 18 and config profiles for iOS 13 and 14 * please report if SSLFix and DOH Works on that version
+- 🎨 **IconThemer** – Customize iOS icons using the Shortcuts method
 - 📥 **IPSW Download Helper** – Direct download links for firmware
 
 ---
