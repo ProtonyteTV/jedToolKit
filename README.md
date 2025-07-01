@@ -55,9 +55,10 @@ It does not modify or replace iOS — purely informational.
 
 ## 📄 License
 
-MIT License  
+[MIT License](LICENSE)  
 © 2025 Kyle Lambot  
 Built for educational, diagnostic, and utility purposes.
+
 
 ---
 
