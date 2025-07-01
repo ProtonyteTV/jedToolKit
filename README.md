@@ -3,6 +3,7 @@
 **Version:** 1.0.070125  
 **Developer:** Kyle Genesis Fernando Lambot ([@ProtonyteTV](https://github.com/ProtonyteTV))  
 **Powered by:** `jed` & `jedOS`
+**Source Code:** Soon
 
 `jedToolKit` is a modular diagnostics and utility suite built for **jailed iOS devices** running **iOS 13 and above** — no jailbreak required.
 
