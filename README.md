@@ -42,7 +42,7 @@ It does not modify or replace iOS — purely informational.
 
 - ✅ iOS 13.0 and above
 - ✅ No jailbreak required
-- ✅ Works on iPhone only (for now)
+- ✅ Works on iPhone, iPod Touch
 
 ---
 
