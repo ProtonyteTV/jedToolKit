@@ -1,6 +1,6 @@
-# 🧰 jedToolKit
+**# 🧰 jedToolKit
 
-**Version:** 1.0.070125  
+**Version:** 1.1.070225  
 **Developer:** Kyle Genesis Fernando Lambot ([@ProtonyteTV](https://x.com/ProtonyteTV))  
 **Powered by:** `jed` & `jedOS`
 
@@ -80,3 +80,4 @@ Built for educational, diagnostic, and utility purposes.
 More tools and updates available on the official site.
 
 
+**
