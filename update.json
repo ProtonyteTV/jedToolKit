@@ -1,5 +1,6 @@
 {
+  
   "version": "1.1",
-  "changelog": "- Initial release of jedToolKit\n- Includes jedPhoneInfo and jedHWChecker\n- And More!",
+  "changelog": "This update includes important visual enhancements and introduces the jedOS Software Update module — a new way to check for future updates to jedToolKit. It also includes bug fixes and performance improvements.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
