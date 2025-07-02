@@ -16,8 +16,10 @@
 - 🔧 **jedHWChecker** – Test core hardware like display, mic, sensors, camera, Face ID / Touch ID
 - 📊 **jedMonitor** – Real-time display of CPU, memory, storage, and thermal state
 - 🧪 **jedTerminal Lite** – Terminal-style interface with quick jailed-safe commands
-- 🧩 **jedSysPatcher** – Install OTA blockers (for iOS 18+) and mobileconfig profiles (iOS 13–14)  
+- 🧩 **jedSysPatcher** – Install OTA blockers (for iOS 18+) and mobileconfig profiles (iOS 13–14)
   `*Please report if SSLFix and DOH options work for your iOS version*`
+- 🔎 **jedTSSChecker** – To check signed version for your iDevice
+- ⏫ **jedOSUpdateChecker** - Live update checks and changelog
 - 🎨 **IconThemer** – Customize home screen icons via Shortcuts automation
 - 📥 **IPSW Download Helper** – Fetch direct firmware links for your device from IPSW.me
 
@@ -42,7 +44,7 @@ It identifies:
 - Which modules are supported on your iOS version
 - Known limitations or bugs per firmware
 - Module stability and recommendations
-- Available software updates via GitHub Releases
+- To check new software updates for jedToolKit via GitHub Releases
 
 > ⚠️ **Disclaimer:** `jedOS` is **not** a custom firmware or emulator.  
 > It does **not modify, patch, or replace iOS**. It’s purely an informational system.
