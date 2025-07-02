@@ -1,10 +1,10 @@
-**# 🧰 jedToolKit
+# 🧰 jedToolKit
 
-**Version:** 1.1.070225  
+**Version:** 1.0.070125  
 **Developer:** Kyle Genesis Fernando Lambot ([@ProtonyteTV](https://x.com/ProtonyteTV))  
 **Powered by:** `jed` & `jedOS`
 
-**Source Code:** Soon
+**Source Code:** Coming soon
 
 `jedToolKit` is a modular diagnostics and utility suite built for **jailed iOS devices** running **iOS 13 and above** — no jailbreak required.
 
@@ -12,72 +12,78 @@
 
 ## 📦 Included Modules
 
-- 📱 **jedPhoneInfo** – Device info viewer + iOS compatibility via `jedOS`
-- 🔧 **jedHWChecker** – Hardware tests: sensors, camera, Face ID, mic, etc.
-- 📊 **jedMonitor** – Real-time system usage monitor (CPU, RAM, storage)
-- 🧪 **jedTerminal Lite** – Terminal-style interface for quick commands
-- 🧩 **jedSysPatcher** – Installs OTA blockers on iOS 18 and config profiles for iOS 13 and 14 ` *please report if SSLFix and DOH Works on that version* `
-- 🎨 **IconThemer** – Customize iOS icons using the Shortcuts method
-- 📥 **IPSW Download Helper** – Direct download links for firmware
+- 📱 **jedPhoneInfo** – View hardware identifiers, specs, and iOS compatibility (via `jedOS`)
+- 🔧 **jedHWChecker** – Test core hardware like display, mic, sensors, camera, Face ID / Touch ID
+- 📊 **jedMonitor** – Real-time display of CPU, memory, storage, and thermal state
+- 🧪 **jedTerminal Lite** – Terminal-style interface with quick jailed-safe commands
+- 🧩 **jedSysPatcher** – Install OTA blockers (for iOS 18+) and mobileconfig profiles (iOS 13–14)  
+  `*Please report if SSLFix and DOH options work for your iOS version*`
+- 🎨 **IconThemer** – Customize home screen icons via Shortcuts automation
+- 📥 **IPSW Download Helper** – Fetch direct firmware links for your device from IPSW.me
 
 ---
 
 ## ⚙️ Architecture
 
 ### `jed` — *Jailed Environment Diagnostics*  
-The invisible engine that powers all modules in `jedToolKit`.  
-Manages compatibility logic, internal behaviors, and shared utilities.
+The invisible runtime that powers every module inside `jedToolKit`.  
+Responsible for:
+- Handling module logic and runtime behaviors
+- Sharing core diagnostic functions
+- Managing iOS version compatibility
+
+Think of it as the framework’s engine — silent but essential.
+
+---
 
 ### `jedOS` — *Jailed Environment Diagnostics Operating Support*  
-A compatibility reference layer that evaluates which modules are stable or limited on your current iOS version.  
-It does not modify or replace iOS — purely informational.
+A diagnostic reference layer built into `jedToolKit`.  
+It identifies:
+- Which modules are supported on your iOS version
+- Known limitations or bugs per firmware
+- Module stability and recommendations
+- Available software updates via GitHub Releases
 
-> ⚠️ `jedOS` Disclaimer:  
-> `jedOS` is **not a custom OS**. It does not modify, patch, or emulate iOS.  
-> It is a diagnostic tool designed to help users assess feature compatibility per iOS version.
+> ⚠️ **Disclaimer:** `jedOS` is **not** a custom firmware or emulator.  
+> It does **not modify, patch, or replace iOS**. It’s purely an informational system.
 
 ---
 
 ## 🚀 Requirements
 
-- ✅ iOS 13.0 and above
-- ✅ No jailbreak required
-- ✅ Works on iPhone, iPod Touch
+- ✅ iOS 13.0 or newer
+- ✅ No jailbreak needed
+- ✅ Compatible with iPhone and iPod touch
 
 ---
 
 ## 🧪 Technology Stack
 
 - Language: `Swift 5.0+`
-- Frameworks: `UIKit`
-- Architecture: Modular, jailed, sandbox-safe
-- UI: Custom navigation + card-based interface
+- UI: `UIKit`
+- Design: Card-based modular layout
+- Architecture: Fully jailed, sandbox-respecting, modular Swift codebase
 
 ---
 
 ## 📄 License
 
 [MIT License](LICENSE)  
-
-© 2025 Kyle Lambot  
-Built for educational, diagnostic, and utility purposes.
-
+© 2025 Kyle Genesis Fernando Lambot  
+For educational, diagnostic, and offline-first use.
 
 ---
 
 ## ❤️ Built With
 
-- `Swift` — Fast & native
-- `☕ Coffee` — To stay up all night
-- `❤️ Love` — From developer to user
-- `🎸 Bass` — To keep the rhythm going
+- `Swift` — Fast, native, and beautiful
+- `☕ Coffee` — Fuel for long coding sessions
+- `❤️ Passion` — Made with love for the community
+- `🎸 Guitar` — Keeps the rhythm of dev going
 
 ---
 
 ## 🌐 Visit
 
-**jedDev** — [https://jeddev.ct.ws](https://jeddev.ct.ws)  
-More tools and updates available on the official site.
-
-
-**
+**jedDev Website** → [https://jeddev.ct.ws](https://jeddev.ct.ws)  
+For more modules, updates, and developer notes.
