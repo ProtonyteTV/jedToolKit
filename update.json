@@ -1,5 +1,5 @@
 {
-  "version": "40.1",
+  "version": "1.1",
   "changelog": "This update includes important visual enhancements and introduces the jedOS Software Update module — a new way to check for future updates to jedToolKit. It also includes bug fixes and performance improvements.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
