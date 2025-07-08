@@ -1,5 +1,13 @@
 {
-  "version": "1.1",
-  "changelog": "This update includes important visual enhancements and introduces the jedOS Software Update module — a new way to check for future updates to jedToolKit. It also includes bug fixes and performance improvements.",
+  "version": "2.0",
+  "changelog": "This update includes important visual enhancements across all modules and introduces jedOSUpdateChecker — a new system-inspired interface for checking future updates to jedToolKit.
+
+Version 2.0 also adds major new modules like jedPanicAnalyzer, which can intelligently parse iDevice panic logs, and jedAI, a barebones on-device assistant (Beta 1) that supports basic diagnostics and system checks.
+
+You’ll also find expanded command support in jedTerminal Lite, full 2024 device compatibility in jedPhoneInfo, and critical layout fixes for iOS 26 (navigation bar no longer blocks titles).
+
+This release includes various performance optimizations, memory usage improvements, and internal bug fixes for a faster and more stable experience.
+
+",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
