@@ -1,5 +1,5 @@
 {
   "version": "2.0",
-  "changelog": "This update introduces a redesigned interface and powerful new tools, including jedPanicAnalyzer for analyzing device logs and jedAI (Beta), a lightweight on-device assistant. It also adds support for 2024 iPhone and iPad models, expands commands in jedTerminal Lite, and introduces the new jedOSUpdateChecker for checking future updates to jedToolKit. This update includes visual enhancements, performance improvements, and bug fixes — including a fix for navigation bar display issues on iOS 26.",
+  "changelog": "This update introduces a redesigned interface and powerful new tools, including jedPanicAnalyzer for analyzing device logs and jedAI (Beta), a lightweight on-device assistant. It also adds support for 2024 iPhone and iPad models, expands commands in jedTerminal Lite, and introduces the new smarter jedOSUpdateChecker for checking future updates to jedToolKit. This update includes visual enhancements, performance improvements, and bug fixes — including a fix for navigation bar display issues on iOS 26.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
