@@ -138,8 +138,5 @@ Find changelogs, docs, and dev logs.
 
 ---
 
-## 📄 License
-
-[MIT License](LICENSE)  
 © 2025 Kyle Genesis Fernando Lambot  
 Educational use only. Not affiliated with Apple Inc.
