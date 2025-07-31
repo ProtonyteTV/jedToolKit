@@ -1,5 +1,5 @@
 {
-  "version": "3.0",
-  "changelog": "This update revamps the jedHWChecker module with over 10 new hardware tests including gyroscope, wide camera, Bluetooth, and cellular diagnostics. A new Settings tab has been added with theme selection, module customization, and toggle for jedAI. Users can now mark tests as Pass or Fail and share results. This version also improves internal performance through a smarter jedOS runtime and enhanced compatibility across iOS 13 to 26+.",
+  "version": "25.4.0",
+  "changelog": "This update introduces several new features to jedToolKit, including jedBenchmark for real-time performance testing and jedOSSecuCheck, an offline anti-tampering system to secure module access. A unified design system called jedUI brings a consistent look and feel across all modules, while jedAccount allows users to create offline profiles with a personalized username and avatar. Offline Mode Toggle is now available and enabled by default, ensuring all core functionalities remain fully local. This version also includes general performance enhancements and internal improvements to further optimize the app's overall experience. jedToolKit is now fully optimized for devices running iOS 15 up to iOS 26+, maintaining smooth performance and wide device support while keeping its offline-first and privacy-focused approach.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
