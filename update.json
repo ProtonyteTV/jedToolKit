@@ -1,5 +1,5 @@
 {
-  "version": "25.5.0",
+  "version": "3.0",
   "changelog": "This update revamps the jedHWChecker module with over 10 new hardware tests including gyroscope, wide camera, Bluetooth, and cellular diagnostics. A new Settings tab has been added with theme selection, module customization, and toggle for jedAI. Users can now mark tests as Pass or Fail and share results. This version also improves internal performance through a smarter jedOS runtime and enhanced compatibility across iOS 13 to 26+.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
