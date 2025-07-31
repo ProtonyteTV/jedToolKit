@@ -2,44 +2,28 @@
 
 > 🛠️ What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 3.0 (jeds echo)  
-**Developer:** Kyle Genesis Fernando Lambot ([@ProtonyteTV](https://x.com/ProtonyteTV))  
+**Version:** 25.4.0 (jeds peak)  
+**Developer:** jedPlatforms
 **Powered by:** `jed` & `jedOS`
 
-`jedToolKit` is a modular diagnostics and utility suite designed for **jailed iOS devices** running **iOS 13 and above** — no jailbreak required.
+`jedToolKit` is a modular diagnostics and utility suite designed for **jailed iOS devices** running **iOS 15 and above** — no jailbreak required.
 
 ---
 
-## 🧪 What’s New in v3.0
+## 🔥 What’s New in v25.4.0 (jeds peak)
 
-### 🧰 Revamped `jedHWChecker`
-- ✅ **Pass or Fail** toggle for each test
-- 📤 **Share test results** as a report
-- 🧩 **New hardware test modules:**
-  - Charger Test  
-  - Physical Buttons Test  
-  - Display Test  
-  - Accelerometer Test  
-  - Vibration Test  
-  - Wi-Fi Test  
-  - Bluetooth Test  
-  - Cellular & VoLTE Test  
-  - Magnetometer Test  
-  - LED Flash Test  
-  - Gyroscope with **3D cube renderer**  
-  - Camera (now supports **ultrawide**)  
-  - Touch Responsiveness (**fullscreen** supported)
+### ✨ New Features
+- 🧪 **jedBenchmark** — Real-time task-based benchmarking for iOS devices
+- 🔒 **jedOSSecuCheck** — Anti-tampering system for module access control
+- 🎨 **jedUI** — Unified UI design across all jedToolKit modules
+- 👤 **jedAccount** — Offline profile system for user personalization
+- 🔐 **App Lock** — Local passcode protection for app access
+- 🌐 **Offline Mode Toggle** — Fully offline-first mode (enabled by default)
+- ⚡ General **Performance and Improvements** across modules
 
-### ⚙️ All-New Settings Tab
-- 🎨 **Theme Selector** – System / Light / Dark  
-- 🧭 **Customizable Tab Bar** – Show/hide or reorder modules  
-- 🔒 Privacy Policy, About, and Developer info  
-- 🤖 Toggle for enabling/disabling **jedAI**
-
-### 🚀 Performance & Improvements
-
-General performance enhancements and internal refinements across all modules.
-
+⚠️ **iOS 13 and 14 Support Dropped**  
+Minimum iOS version is now **iOS 15**.  
+We left iOS 13 and 14 in a stable final version.
 
 ---
 
@@ -51,6 +35,26 @@ General performance enhancements and internal refinements across all modules.
 
 ### 🔧 jedHWChecker
 - Test 19 hardware components (camera, touch, gyro, Wi-Fi, buttons, etc.)
+
+### 🧪 jedBenchmark
+- Real-time performance benchmarking for iOS devices  
+- Measures actual device performance using task-based workloads (not synthetic scores)  
+- Works fully offline with no server-side uploads
+
+### 🛡️ jedOSSecuCheck
+- Anti-tampering system that limits access to protected modules  
+- Ensures module security while keeping essential tools like `jedPhoneInfo` always accessible  
+- Operates fully offline
+
+### 👤 jedAccount
+- Offline profile system with custom username and profile picture  
+- Adds personalized splash greetings and in-app identity  
+- No online accounts or data collection — purely local profiles
+
+### 🔐 App Lock
+- Local passcode lock for securing access to jedToolKit  
+- Fully offline with no cloud or online storage  
+- Face ID/Touch ID support on compatible devices
 
 ### 🧪 jedTerminal Lite
 - Terminal-style UI with commands like `echo`, `uptime`, `date`, `battery`, and more
@@ -69,9 +73,8 @@ General performance enhancements and internal refinements across all modules.
 - Analyze 100+ iOS/macOS panic log patterns  
 - Fully offline and jailbreak-safe
 
-### 🤖 jedAI (Beta 1)
+### 🤖 jedAI (Beta 2)
 - Basic assistant for system checks and panic detection  
-- Future versions will support full GPT-based interaction
 
 ### 🎨 IconThemer
 - Customize homescreen icons using Shortcuts  
@@ -103,7 +106,7 @@ It helps `jedToolKit` adapt safely across different devices and iOS versions.
 
 ## ✅ Requirements
 
-- iOS 13.0 or later  
+- iOS 15.0 or later  
 - Works on all iPhones and iPods  
 - No jailbreak required  
 - Internet only needed for:
@@ -115,7 +118,6 @@ It helps `jedToolKit` adapt safely across different devices and iOS versions.
   - Bluetooth  
   - Cellular & VoLTE
 
-
 ---
 
 ## 🛡️ Security & Privacy
@@ -125,7 +127,6 @@ It helps `jedToolKit` adapt safely across different devices and iOS versions.
 - Internet only used for optional metadata  
 - Bluetooth permission is only used for testing Bluetooth and Cellular features — never for tracking  
 - Fully offline-first by design
-
 
 ---
 
@@ -144,15 +145,14 @@ It helps `jedToolKit` adapt safely across different devices and iOS versions.
 - **Coffee** — Always  
 - **Passion** — For every iOS nerd  
 - **Worship Music** — Built between sets and dev sprints  
-- **Free Time** — Turned full time
 
 ---
 
 ## 🌐 Visit
 
-**jedDev Website** → [https://jeddev.ct.ws](https://jeddev.ct.ws)
+**jedPlatforms Website** → [https://jeddev.ct.ws](https://jeddev.ct.ws)
 
 ---
 
-© 2025 Kyle Genesis Fernando Lambot  
+2025 jedPlatforms  
 For educational use only. Not affiliated with Apple Inc.
