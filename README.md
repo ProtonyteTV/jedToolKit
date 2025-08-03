@@ -10,6 +10,10 @@
 
 ---
 
+## 🩹 Fixed in 25.4.1
+
+- 📥 **IPSW Download Helper** - This minor but critical update addresses a major issue with the IPSW Download Helper, which previously caused crashes during downloads and lacked proper storage space checks.
+
 ## 🔥 What’s New in v25.4.0 (jeds peak)
 
 ### ✨ New Features
