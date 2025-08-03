@@ -2,7 +2,7 @@
 
 > 🛠️ What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 25.4.0 (jeds peak)  
+**Version:** 25.4.1 (jeds peak)  
 **Developer:** jedPlatforms
 **Powered by:** `jed` & `jedOS`
 
