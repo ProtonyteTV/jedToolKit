@@ -81,7 +81,7 @@
 
 ### 🔧 jedHWChecker
 
-- Test 19 hardware components (camera, touch, gyro, Wi-Fi, buttons, etc.)
+- Test 18 hardware components (camera, touch, gyro, Wi-Fi, buttons, etc.)
 
 ### 🧪 jedBenchmark
 
