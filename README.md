@@ -28,7 +28,7 @@
 
 ---
 
-## ✨ What’s New in v25.5.1
+## 🧩 Integrated 25.5.0 Features (Included in 25.5.1)
 
 ### 📱 **jedPhoneInfo**
 
