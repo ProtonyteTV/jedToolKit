@@ -20,15 +20,17 @@
 - Centralized **Lite Mode** ensures compromised devices only run safe modules.  
 - Multi-layered anti-tampering system with anti-debugging and sandbox integrity checks.
 
+---
+
+## 🧩 Integrated 25.5.0 Features (Included in 25.5.1)
+
 ### 📦 **jedXIP Archive Manager**
+**New Module**
 
 - A full ZIP archive manager.
 - Create, view, and edit archives directly in-app.
 - Expands jedToolKit beyond diagnostics into utility management.
 
----
-
-## 🧩 Integrated 25.5.0 Features (Included in 25.5.1)
 
 ### 📱 **jedPhoneInfo**
 
