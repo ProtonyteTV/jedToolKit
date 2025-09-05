@@ -2,7 +2,7 @@
 
 > 🛠️ What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 25.5.1 (jed fixed jed)\
+**Version:** 25.5.2 (jed fixed jed)\
 **Developer:** jedPlatforms\
 **Powered by:** `jed` & `jedOS`
 
@@ -10,70 +10,17 @@
 
 ---
 
-## 🌟 STAR UPDATE (25.5.1)
 
-### 🔒 **jedOSSecuCheck 3.0**
+## ⭐ New on 25.5.2
 
-- Next-generation security engine with **robust module protection**.  
-- Performs integrity verification on the filesystem and module environment.  
-- Encrypted internal logic prevents reverse engineering.  
-- Centralized **Lite Mode** ensures compromised devices only run safe modules.  
-- Multi-layered anti-tampering system with anti-debugging and sandbox integrity checks.
+- **UI Enhancements**  
+  Optimized the user interface for a smoother experience on iOS 26 and older versions.
 
----
+- **Bug Fixes & Stability**  
+  Resolved issues with navigation bars, the jedPhoneInfo widget, and the archiving process in jedXIP.
 
-## 🧩 Integrated 25.5.0 Features (Included in 25.5.1)
-
-### 📦 **jedXIP Archive Manager**
-**New Module**
-
-- A full ZIP archive manager.
-- Create, view, and edit archives directly in-app.
-- Expands jedToolKit beyond diagnostics into utility management.
-
-
-### 📱 **jedPhoneInfo**
-
-- New **Advanced Features** section:
-  - ProMotion Display
-  - Connector Type
-  - Action Button
-  - Always-On Display (AOD) Info
-- Toggle to view **Optimistic Storage** vs **Raw Storage**.
-
-### 🔧 **jedHWChecker**
-
-- Button test: Now easier — detects **volume button inputs** automatically.
-- Camera test: Smarter detection per device model; added **ultrawide** and **telephoto** tests.
-- Battery info moved to **Tools section** (not an actual test).
-- Brightness test: Saves user brightness before testing and restores it afterward.
-
-### 🎨 **IconThemer**
-
-- Added **Find App Scheme** for quicker URL scheme assignment.
-- Fixed icon color & glyph logic: Now supports colors on SF Symbol icons (missing in 25.4.1).
-
-### 📲 **jedPhoneInfo Widget**
-
-- Quick view of device info at a glance.
-
-### 🖌️ **jedUI**
-
-- Removed neon colors & shadows → flatter, cleaner design.
-- Finalized UI with **accent colors** & **multi-color support**.
-
-### 🤖 **jedAI (Beta 3)**
-
-- Added new commands:
-  - System Status
-  - Check Storage
-  - List Modules
-  - Search
-  - Clear Chat
-- UI/UX improvements:
-  - Typing Indicator
-  - Rich Text Formatting
-  - Ask Suggestions
+- **Layout Adjustments**  
+  Improved spacing and alignment throughout the app for a cleaner, more polished look.
 
 ---
 
@@ -81,12 +28,12 @@
 
 ### `jed` — *Jailed Environment Diagnostics*
 
-The core system that powers all modules.\
+The core system that powers all modules.  
 It handles info gathering, sandboxed access, and keeps everything running smoothly.
 
 ### `jedOS` — *Jailed Environment Diagnostics Operating Support*
 
-A lightweight runtime that manages iOS compatibility and module behavior.\
+A lightweight runtime that manages iOS compatibility and module behavior.  
 It helps `jedToolKit` adapt safely across different devices and iOS versions.
 
 > ⚠️ Not an operating system. It doesn’t modify or replace iOS — it just makes modules smarter.
@@ -144,5 +91,5 @@ It helps `jedToolKit` adapt safely across different devices and iOS versions.
 
 ---
 
-2025 jedPlatforms\
+2025 jedPlatforms  
 For educational use only. Not affiliated with Apple Inc.
