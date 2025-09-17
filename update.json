@@ -1,5 +1,6 @@
 {
-  "version": "25.7.0",
-  "changelog": "This update introduces several improvements to jedToolKit for a smoother, more stable experience. UI Enhancements optimize the interface for iOS 26 and older versions. Bug Fixes & Stability resolve issues with navigation bars, the jedPhoneInfo widget, and the archiving process in jedXIP. Layout Adjustments improve spacing and alignment throughout the app for a cleaner, more polished look.",
+  "version": "25.6.0",
+  "changelog": "jedToolKit 25.6.0 introduces a major new tool and a refreshed design.\n\n• **New Module – jedDiskChecker:** Measure your device’s storage read and write speeds with precise, built-in testing.\n• jedUI 3.0 delivers a modern card-based layout across nearly every screen for a cleaner, more consistent experience.\n• Refined accent colors, including a theme-adaptive Monochrome option, replace Multicolor Mode.\n• jedHWChecker now verifies user interaction before showing results.\n• Software Updates can be checked directly from the main jedHome navigation menu.\n• jedOSSecuCheck v3.1 adds deeper, multi-layered system integrity checks.\n• General bug fixes and performance improvements for a smoother experience.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
+
