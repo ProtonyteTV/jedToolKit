@@ -1,5 +1,5 @@
 {
-  "version": "25.5.3",
+  "version": "25.7.0",
   "changelog": "This update introduces several improvements to jedToolKit for a smoother, more stable experience. UI Enhancements optimize the interface for iOS 26 and older versions. Bug Fixes & Stability resolve issues with navigation bars, the jedPhoneInfo widget, and the archiving process in jedXIP. Layout Adjustments improve spacing and alignment throughout the app for a cleaner, more polished look.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
