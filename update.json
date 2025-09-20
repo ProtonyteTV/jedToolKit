@@ -1,5 +1,5 @@
 {
-  "version": "25.6.0",
-  "changelog": "This update introduces jedDiskChecker, a new tool that accurately measures your device’s storage read and write speeds. Accent colors have been refined with fresh options, including a theme-adaptive Monochrome choice, and Multicolor Mode has been removed. jedHWChecker now uses improved pass and fail logic to confirm user interaction before showing results, and the jedToolKit Update Checker is now accessible directly from the main jedHome navigation menu. The release also includes multiple bug fixes and performance enhancements for a smoother experience, along with jedOSSecuCheck v3.1, which provides deeper system integrity checks and dynamic, multi-layered defenses.",
+  "version": "25.6.1",
+  "changelog": "This update provides the improved navigation bar and performance fixes and is recommended for all users.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
