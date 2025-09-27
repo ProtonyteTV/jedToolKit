@@ -2,21 +2,11 @@
 
 > 🛠️ What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 25.6.1 (jedsCardChromatic)  
+**Version:** 25.6.3 (jedsCardChromatic)  
 **Developer:** jedPlatforms  
 **Powered by:** `jed` & `jedOS`
 
 `jedToolKit` is a modular diagnostics and utility suite designed for **jailed iOS devices** running **iOS 15 and above** — no jailbreak required.
-
----
-
-## 🌟 STAR UPDATE (25.6.1)
-
-### 📱 **Improved Navigation Bar**
-- The navigation bar now smoothly shrinks to a smaller title as you scroll, restoring the classic, fluid behavior.
-
-### 🐞 **Bug Fixes & Performance**
-- Squashed several bugs and improved overall performance for a smoother experience.
 
 ---
 
