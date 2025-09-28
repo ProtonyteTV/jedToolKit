@@ -66,4 +66,4 @@ Full ZIP archive manager for creating and editing archives.
 
 ### `jed` — *Jailed Environment Diagnostics*  
 The core system that powers all modules.  
-Ha
+
