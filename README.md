@@ -64,6 +64,66 @@ Full ZIP archive manager for creating and editing archives.
 
 ## ⚙️ Internal Architecture
 
-### `jed` — *Jailed Environment Diagnostics*  
+## `jed` — *Jailed Environment Diagnostics*  
 The core system that powers all modules.  
+Handles info gathering, sandboxed access, and keeps everything running smoothly.
 
+### `jedOS` — *Jailed Environment Diagnostics Operating Support*  
+Lightweight runtime managing iOS compatibility and module behavior.  
+> ⚠️ Not an operating system — it doesn’t modify or replace iOS.
+
+---
+
+## ✅ Requirements
+
+- iOS 15.0 or later  
+- Works on all iPhones and iPods  
+- No jailbreak required  
+- Internet only needed for:
+  - IPSW download links  
+  - TSS signing status  
+  - Update metadata from GitHub  
+  - Wi-Fi testing  
+- **Bluetooth is required** for testing:
+  - Bluetooth  
+  - Cellular & VoLTE  
+
+---
+
+## 🛡️ Security & Privacy
+
+- 100% local and sandbox-compliant  
+- No serials, UDIDs, or personal data collected  
+- Internet only used for optional metadata  
+- Bluetooth permission is only used for testing Bluetooth and Cellular features — never for tracking  
+- Fully offline-first by design  
+- **jedOSSecuCheck 3.1** ensures maximum module protection against tampering  
+
+---
+
+## 🧪 Technology Stack
+
+- Language: `Swift 5.0+`  
+- UI Framework: `SwiftUI + UIKit`  
+- Design: Modular, card-based layout  
+- Architecture: Jailed, sandbox-respecting Swift codebase  
+
+---
+
+## ❤️ Built With
+
+- **Swift** — Native, fast, and clean  
+- **Coffee** — Always  
+- **Passion** — For every iOS nerd  
+- **Worship Music** — Built between sets and dev sprints  
+
+---
+
+## 🌐 Visit
+
+**jedPlatforms Website** → [https://jeddev.ct.ws](https://jeddev.ct.ws)
+
+---
+
+2025 jedPlatforms  
+For educational use only. Not affiliated with Apple Inc.
