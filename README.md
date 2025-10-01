@@ -2,7 +2,7 @@
 
 > 🛠️ What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 25.6.3 (jedsCardChromatic)  
+**Version:** 25.7.0 (jedPanic)  
 **Developer:** jedPlatforms  
 **Powered by:** `jed` & `jedOS`
 
