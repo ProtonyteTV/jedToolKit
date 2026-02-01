@@ -2,7 +2,7 @@
 
 > 🛠️ What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 25.7.0 (jedPanic)  
+**Version:** 25.7.1 (jedPanic)  
 **Developer:** jedPlatforms  
 **Powered by:** `jed` & `jedOS`
 
@@ -125,5 +125,5 @@ Lightweight runtime managing iOS compatibility and module behavior.
 
 ---
 
-2025 jedPlatforms  
+2026 jedPlatforms  
 For educational use only. Not affiliated with Apple Inc.
