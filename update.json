@@ -1,5 +1,5 @@
 {
-  "version": "25.7.0",
-  "changelog": "This update provides the important UI fixes and is recommended for all users.",
+  "version": "25.7.1",
+  "changelog": "This update resolves a reporting issue on jedHWChecker where Vibration and Wi-Fi test results were not correctly saved, and is recommended for all users.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
