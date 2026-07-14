@@ -1,0 +1,5 @@
+{
+  "version": "26.1.1",
+  "changelog": "This update fully migrates jedHWChecker to jedUI 5 interface, featuring a brand-new battery and Bluetooth accessory section with live connection statuses and charge levels, completely redesigns the Home Screen widgets with expanded analytics, and resolves the 'Data Unavailable' synchronization issue. This update is recommended for all users.",
+  "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
+}
