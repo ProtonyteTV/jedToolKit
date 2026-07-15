@@ -117,28 +117,11 @@ Bluetooth permission is used exclusively for:
 
 ---
 
-## What's New in 26.1.1
+## What's New in 26.1.2
 
-### jedHWChecker
+### Core System Cleanup
 
-- Fully migrated every jedHWChecker module to **jedUI 5** interface.
-- The improved Battery section in jedHWChecker now displays connected Bluetooth accessories.
-- Improved interface consistency and navigation across all hardware testing modules.
-
-### Widget Update
-
-- Completely redesigned the jedToolKit Home Screen widgets.
-- Added expanded real-time analytics.
-- Improved storage capacity reporting.
-- Added system uptime tracking.
-- Fixed the **"Data Unavailable"** synchronization issue affecting previous releases.
-- Improved widget reliability and refresh behavior.
-
-### General Improvements
-
-- UI polish and refinement.
-- Improved overall application stability.
-- Minor bug fixes and quality-of-life improvements.
+- The legacy 'jed' and 'jedOS' labels have been officially removed from the architecture to properly showcase the true core frameworks of the application: jedOSSecuCheck and jedUI.
 
 ---
 
