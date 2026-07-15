@@ -2,7 +2,7 @@
 
 > What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 26.1.1 *(jedBrrr)*  
+**Version:** 26.1.2 *(jedBrrr)*  
 **Developer:** jedPlatforms  
 
 `jedToolKit` is a modular diagnostics and utility suite designed for **jailed iOS devices** running **iOS 15 and later** — no jailbreak required.
