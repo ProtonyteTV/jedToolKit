@@ -67,11 +67,11 @@ Create, extract, and manage ZIP archives directly within jedToolKit.
 
 The foundational subsystem responsible for verifying application health and execution environment integrity. It ensures that `jedToolKit` runs in a secure state, shielding the toolkit from unauthorized modifications and runtime anomalies through robust environment checks.
 
-### `jedAS` — *Jailed Environment Diagnostics Application Shell*
+### `jedUI` — *Jailed Environment Diagnostics User Interface*
 
-The high-level application orchestration framework, layout coordinator, and configuration harness that unifies the user interface, module routing, and shared app-level presentation services.
+The core UI/UX experience. Powers the application's layout, navigation flow, and modular presentation shell.
 
-> **Note:** `jedAS` is **not** an operating system. It represents the interface manager and application harness. It does not modify, replace, or extend iOS.
+> **Note:** `jedUI` is **not** an operating system. It represents the interface manager and application harness. It does not modify, replace, or extend iOS.
 
 ---
 
