@@ -1,5 +1,5 @@
 {
-  "version": "26.1.2",
-  "changelog": "This update simplifies the internal architecture by removing the legacy 'jed' and 'jedOS' framework labels, aligning the application with its production core frameworks: jedOSSecuCheck and jedUI. This cleanup improves architectural clarity and better reflects the technologies powering jedToolKit. This update is recommended for all users.",
+  "version": "26.2",
+  "changelog": "Introducing jedRAMChecker for real-time physical memory footprint monitoring, Mach kernel pressure tracking, live allocation graphs, and Increased Memory Limit entitlement checks. This release also upgrades jedBenchmark 2 with dynamic memory headroom tracking to prevent jetsam terminations, updates jedPhoneInfo with kernel RAM metrics, and completes core architecture cleanups by removing legacy framework labels. This update is recommended for all users.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
