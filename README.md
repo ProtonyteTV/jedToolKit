@@ -2,7 +2,7 @@
 
 > What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 26.1.2 *(jedBrrr)*  
+**Version:** 26.2  
 **Developer:** jedPlatforms  
 
 `jedToolKit` is a modular diagnostics and utility suite designed for **jailed iOS devices** running **iOS 15 and later** — no jailbreak required.
@@ -11,17 +11,20 @@
 
 ## Included Modules
 
+### jedRAMChecker
+Real-time physical memory footprint monitoring (`phys_footprint`), available allocation headroom (`os_proc_available_memory`), Mach kernel memory pressure tracking, live allocation graphs, memory diagnostics summaries, and Increased Memory Limit entitlement capability checks.
+
+### jedPhoneInfo
+Displays comprehensive device information including physical memory footprint, available headroom, kernel memory pressure state, battery, CPU, display, storage, hardware identifiers, Action Button detection, and more.
+
+### jedBenchmark 2
+Task-based performance benchmarking redesigned with dynamic hardware tiering, legacy device optimizations, safe multi-core concurrency, real-time memory headroom tracking to prevent jetsam crashes during RAM testing, and improved benchmark accuracy across supported Apple devices.
+
 ### jedDiskChecker
 Accurately measures your device's storage performance with an optimized benchmarking engine featuring Live Logs and a high-performance I/O engine.
 
-### jedPhoneInfo
-Displays comprehensive device information including battery, CPU, memory, display, storage, hardware identifiers, Action Button detection, and more.
-
 ### jedHWChecker
-Test 18 hardware components including camera, display, speakers, microphones, Wi-Fi, Bluetooth, sensors, physical buttons, vibration, and a new Battery Diagnostics (Beta) suite featuring charge cycle reporting, battery authenticity validation, and real-time amperage monitoring.
-
-### jedBenchmark 2
-Task-based performance benchmarking redesigned with dynamic hardware tiering, legacy device optimizations, safe multi-core concurrency, adaptive memory management, and improved benchmark accuracy across supported Apple devices.
+Test 18 hardware components including camera, display, speakers, microphones, Wi-Fi, Bluetooth, sensors, physical buttons, vibration, and a Battery Diagnostics suite featuring charge cycle reporting, battery authenticity validation, and real-time amperage monitoring.
 
 ### jedOSSecuCheck 4.0
 Offline environment assessment and local anti-tampering core featuring dual-phase verification, low-level heuristic scanning, and dynamic environment verification to ensure application health.
@@ -117,10 +120,18 @@ Bluetooth permission is used exclusively for:
 
 ---
 
-## What's New in 26.1.2
+## What's New in 26.2
+
+### jedRAMChecker Diagnostics
+- Introduced a brand new RAM diagnostics and capability inspector module to monitor physical memory footprint (`phys_footprint`), available allocation headroom (`os_proc_available_memory`), real-time Mach kernel pressure events, and Increased Memory Limit entitlements.
+
+### jedBenchmark 2 RAM Engine Upgrade
+- Memory benchmarking now dynamically queries active kernel headroom and monitors physical footprint expansion during execution to prevent jetsam terminations while stress testing LPDDR5/LPDDR5X RAM bandwidth.
+
+### jedPhoneInfo Memory Metrics
+- Hardware diagnostics updated to display physical memory footprint, process allocation headroom, and kernel pressure states alongside total physical RAM.
 
 ### Core System Cleanup
-
 - The legacy 'jed' and 'jedOS' labels have been officially removed from the architecture to properly showcase the true core frameworks of the application: jedOSSecuCheck and jedUI.
 
 ---
