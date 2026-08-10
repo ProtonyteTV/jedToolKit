@@ -116,7 +116,7 @@ Bluetooth permission is used exclusively for:
 - **Frameworks:** SwiftUI + UIKit (Dynamic View Hosting Controller)
 - **Architecture:** Modular, sandbox-compliant decoupled presentation design
 - **Core Security Engine:** `jedOSSecuCheck 4.0`
-- **Application Shell:** `jedAS 5.0`
+- **Application Shell:** `jedUI 5.0`
 
 ---
 
@@ -130,9 +130,6 @@ Bluetooth permission is used exclusively for:
 
 ### jedPhoneInfo Memory Metrics
 - Hardware diagnostics updated to display physical memory footprint, process allocation headroom, and kernel pressure states alongside total physical RAM.
-
-### Core System Cleanup
-- The legacy 'jed' and 'jedOS' labels have been officially removed from the architecture to properly showcase the true core frameworks of the application: jedOSSecuCheck and jedUI.
 
 ---
 
