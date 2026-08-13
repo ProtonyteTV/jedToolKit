@@ -2,7 +2,7 @@
 
 > What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 26.2  
+**Version:** 26.2.1  
 **Developer:** jedPlatforms  
 
 `jedToolKit` is a modular diagnostics and utility suite designed for **jailed iOS devices** running **iOS 15 and later** — no jailbreak required.
@@ -120,17 +120,10 @@ Bluetooth permission is used exclusively for:
 
 ---
 
-## What's New in 26.2
+## What's New in 26.2.1
 
-### jedRAMChecker Diagnostics
-- Introduced a brand new RAM diagnostics and capability inspector module to monitor physical memory footprint (`phys_footprint`), available allocation headroom (`os_proc_available_memory`), real-time Mach kernel pressure events, and Increased Memory Limit entitlements.
-
-### jedBenchmark 2 RAM Engine Upgrade
-- Memory benchmarking now dynamically queries active kernel headroom and monitors physical footprint expansion during execution to prevent jetsam terminations while stress testing LPDDR5/LPDDR5X RAM bandwidth.
-
-### jedPhoneInfo Memory Metrics
-- Hardware diagnostics updated to display physical memory footprint, process allocation headroom, and kernel pressure states alongside total physical RAM.
-
+### Widget Optimizations
+- Added Tinted Support on iOS 18 and later.
 ---
 
 ## Built With
