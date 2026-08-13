@@ -123,7 +123,7 @@ Bluetooth permission is used exclusively for:
 ## What's New in 26.2.1
 
 ### Widget Optimizations
-- Added Tinted Support on iOS 18 and later.
+- Adds support for tinted widgets on iOS 18 and later.
 ---
 
 ## Built With
