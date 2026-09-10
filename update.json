@@ -1,5 +1,5 @@
 {
   "version": "26.3",
-  "changelog": "Low-Level CPU Telemetry: Real-time per-core CPU load gauges, Mach thread profiling, Metal GPU identification, and Neural Engine (ANE) TOPS mapping.\n• jedRAMChecker Enhancements: Live Mach VM statistics breakdown, plus accurate detection for 64-bit address space, paid Extended VA entitlements, and Increased Memory Limit caps.\n• Security & UI Refinements: Decoupled jedOSSecuCheck profile pills with dedicated manual diagnostic triggers, plus universal Accent Color support across feature views.\n\nThis update is recommended for all users.",
+  "changelog": "Low-Level CPU Telemetry: Real-time per-core CPU load gauges, Mach thread profiling, Metal GPU identification, and Neural Engine (ANE) TOPS mapping.\n jedRAMChecker Enhancements: Live Mach VM statistics breakdown, plus accurate detection for 64-bit address space, paid Extended VA entitlements, and Increased Memory Limit caps.\n Security & UI Refinements: Decoupled jedOSSecuCheck profile pills with dedicated manual diagnostic triggers, plus universal Accent Color support across feature views.\n\nThis update is recommended for all users.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
