@@ -2,7 +2,7 @@
 
 > What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 26.3  
+**Version:** 27.0  
 **Developer:** jedPlatforms  
 
 `jedToolKit` is a modular diagnostics and utility suite designed for **jailed iOS devices** running **iOS 15 and later** — no jailbreak required.
@@ -18,7 +18,7 @@ Real-time physical memory footprint monitoring (`phys_footprint`), available all
 Displays comprehensive device information including live per-core CPU load profiling (Performance vs. Efficiency cores), process CPU usage and Mach thread counts, Metal GPU identification, Apple Neural Engine (ANE) TOPS mapping, physical memory footprint, available headroom, kernel memory pressure state, battery, display, storage, hardware identifiers, Action Button detection, and dynamic accent color support.
 
 ### jedBenchmark 2
-Task-based performance benchmarking redesigned with dynamic hardware tiering, legacy device optimizations, safe multi-core concurrency, real-time memory headroom tracking to prevent jetsam crashes during RAM testing, and improved benchmark accuracy across supported Apple devices.
+Task-based performance benchmarking redesigned with dynamic hardware tiering, pre-compiled Metal shaders for steady Graphics scores, single-buffer RAM testing, lightweight RNG for accurate random-access memory bandwidth, and safe multi-core concurrency to prevent jetsam crashes.
 
 ### jedDiskChecker
 Accurately measures your device's storage performance with an optimized benchmarking engine featuring Live Logs and a high-performance I/O engine.
@@ -26,72 +26,76 @@ Accurately measures your device's storage performance with an optimized benchmar
 ### jedHWChecker
 Test 18 hardware components including camera, display, speakers, microphones, Wi-Fi, Bluetooth, sensors, physical buttons, vibration, and a Battery Diagnostics suite featuring charge cycle reporting, battery authenticity validation, and real-time amperage monitoring.
 
-### jedOSSecuCheck 4.0
-Offline environment assessment and local anti-tampering core featuring dual-phase verification, low-level heuristic scanning, dynamic environment verification, decoupled profile selection (Fast Mode vs. Deep Core), and an explicit manual diagnostic trigger to ensure application health.
+### jedOSSecuCheck 4.1
+Offline environment assessment and local anti-tampering core featuring dual-phase verification, low-level heuristic scanning, dynamic environment verification, decoupled profile selection (Fast Mode vs. Deep Core), hardened app verification routines, and an explicit manual diagnostic trigger to ensure application health.
 
 ### jedAccount
-Offline profile management with customizable usernames, profile pictures, and pinned modules.
+Offline profile management with customizable usernames, profile pictures, character limit counters, unsaved change alerts, active Save state verification, and pinned modules.
 
 ### App Lock
-Protect jedToolKit using a local passcode with Face ID and Touch ID authentication.
+Protect jedToolKit using a local passcode with Face ID and Touch ID authentication. Disabling App Lock now requires biometric or passcode verification for enhanced security.
 
 ### jedTerminal
-Terminal-inspired interface with real-time diagnostics, URLSession-powered utilities, storage inspection, and contextual status indicators.
+Terminal-inspired interface with real-time diagnostics, lazy line rendering, 500-line history protection, ▲/▼ command recall, color-coded console output, text selection support, URLSession-powered utilities, storage inspection, and contextual status indicators.
 
-### IPSW Download Helper
-Download IPSW firmware directly from IPSW.me with signing status information.
+### IPSW Downloader
+Browse and download IPSW firmware directly with signing status information, automatic checksum verification retries, connection drop resumption, and immediate download starts.
 
 ### jedTSSChecker
-Check iOS firmware signing status in real-time.
+Check iOS firmware signing status in real-time with pull-to-refresh support, manual retries, cached date formatters, and offline data preservation.
 
 ### jedUpdateChecker
 Native update interface for checking the latest jedToolKit releases.
 
 ### jedPanicAnalyzer
-Analyze over 100 iOS and macOS panic log patterns completely offline.
+Analyze 38 iOS and macOS panic log patterns offline with background log parsing, single-pass signature compilation, native report sharing, and an intuitive overflow menu.
 
-### jedAI (Alpha)
-Experimental AI module currently under active development.
+### jedAI (Beta)
+On-device intelligence module powered directly by Apple's Foundation Models framework. Features a flat themed conversation experience matching your accent color, dedicated chat modes (Diagnostics Assistant vs. General Chatbot), and automatic local chat history saved in Recents.
 
-### IconThemer
+### Icon Themer
 Customize Home Screen icons using Apple's Shortcuts app. Batch-create and install multiple themed icons at once.
 
 ### jedSysPatcher
 Manage OTA update blocking and install supported configuration profiles.
 
 ### jedXIP
-Create, extract, and manage ZIP archives directly within jedToolKit.
+Create, extract, and manage ZIP archives directly within jedToolKit with seamless folder navigation, automatic duplicate naming conflict handling, collision-free extraction paths, and Recents cleanup.
 
 ---
 
 ## Internal Architecture
 
-### `jedOSSecuCheck 4.0` — *Core Security Engine*
+### `jedOSSecuCheck 4.1` — *Core Security Engine*
 
 The foundational subsystem responsible for verifying application health and execution environment integrity. It ensures that `jedToolKit` runs in a secure state, shielding the toolkit from unauthorized modifications and runtime anomalies through robust environment checks.
 
-### `jedUI` — *Jailed Environment Diagnostics User Interface*
+### `jedUI 6.0` — *Jailed Environment Diagnostics User Interface*
 
-The core UI/UX experience. Powers the application's layout, navigation flow, and modular presentation shell.
+The core UI/UX experience. Powers the application's layout, navigation flow, profile photo synchronization across Settings, persistent accent color preferences, and modular presentation shell.
 
-> **Note:** `jedUI` is **not** an operating system. It represents the interface manager and application harness. It does not modify, replace, or extend iOS.
+> **Note:** `jedUI 6.0` is **not** an operating system. It represents the interface manager and application harness. It does not modify, replace, or extend iOS.
 
 ---
 
 ## Requirements
 
-- iOS 15.0 or later
-- Compatible with supported iPhone and iPod touch models
+### jedToolKit
+- **OS:** iOS 15.0 or later
+- **Device:** iPhone 6s or later
 - No jailbreak required
 
-Internet connection is required only for:
+### jedAI (Beta)
+- **OS:** iOS 26.0 or later
+- **Device:** iPhone 15 Pro or later
+- **Configuration:** Apple Intelligence enabled with the on-device model downloaded
 
+Internet connection is required only for:
 - IPSW downloads
 - Firmware signing information
 - Application update metadata
 
 Bluetooth permission is used exclusively for:
-
 - Bluetooth diagnostics
 - Cellular and VoLTE testing
 
@@ -106,7 +110,7 @@ Bluetooth permission is used exclusively for:
 - No telemetry or user tracking
 - Internet access is only used for optional online services
 - Bluetooth permission is never used for tracking
-- `jedOSSecuCheck 4.0` provides hardware environmental checks for active runtime safety.
+- `jedOSSecuCheck 4.1` provides hardware environmental checks for active runtime safety.
 
 ---
 
@@ -116,25 +120,34 @@ Bluetooth permission is used exclusively for:
 - **Low-Level APIs:** Darwin C Kernels (`host_processor_info`, `task_threads`, `host_statistics64`, `task_info`), Metal
 - **Frameworks:** SwiftUI + UIKit (Dynamic View Hosting Controller)
 - **Architecture:** Modular, sandbox-compliant decoupled presentation design
-- **Core Security Engine:** `jedOSSecuCheck 4.0`
-- **Application Shell:** `jedUI 5.0`
+- **Core Security Engine:** `jedOSSecuCheck 4.1`
+- **Application Shell:** `jedUI 6.0`
 
 ---
 
-## What's New in 26.3
+## What's New in 27.0
 
-### Low-Level CPU & Hardware Telemetry
-- **Live Per-Core Gauges:** Real-time Mach kernel CPU profiling for Performance and Efficiency cores (`host_processor_info`).
-- **Process & Thread Profiling:** Tracks active Mach task thread counts (`task_threads`) and process CPU utilization in real-time.
-- **Hardware Engine Specs:** Metal GPU device detection and Apple Neural Engine (ANE) TOPS mapping covering all devices from iPhone X through iPhone 17 series, Air, 16e, and 17e.
+### jedAI Beta
+- **Redesigned Interface:** Flatter, cleaner design with flat fills and hairline strokes, automatically matching your chosen accent color.
+- **Smarter Formatting & Thinking:** Normalized markdown formatting and responses with a calmer on-device status indicator.
+- **Recents Tab:** Conversations are automatically written to on-device storage. Choose between Diagnostics Assistant or General Chatbot mode when creating a chat.
 
-### jedRAMChecker Capability Diagnostics
-- **Capability Diagnostics:** Accurately distinguishes 64-bit address space, paid Developer Extended Virtual Addressing entitlement, Increased Memory Limit caps, and VM statistics access.
-- **Mach VM Kernel Page Breakdown:** Live page allocation tracking for Wired, Active, Inactive, Swap Compressed memory, Page Size, and kernel purges.
+### Archive & Download Reliability (jedXIP & IPSW Downloader)
+- **jedXIP Fixes:** Resolved folder navigation issues, added swipe-to-rename/delete, duplicate name auto-numbering, unique extraction sandbox directories, and Recents clearing.
+- **IPSW Downloader:** Added automatic checksum verification retries, connection drop resumption, immediate download initiation, and direct failure alerts.
 
-### Security & UI Refinements
-- **Refined Security Diagnostics:** Profile selection in `jedOSSecuCheck 4.0` (Fast Mode and Deep Core) now allows toggling scan profiles cleanly without triggering an automatic run, establishing "Execute Diagnostics" as the dedicated action button.
-- **Universal Accent Color Integration:** Feature highlight views, CPU core progress bars, and module themes now dynamically adapt to your selected Accent Color and Multicolor mode settings in real-time.
+### Performance & Engine Work (jedBenchmark 2 & jedTerminal)
+- **jedBenchmark 2:** Metal shaders are pre-compiled on startup, memory buffer allocation is unified across tests, and random number generation overhead is reduced.
+- **jedTerminal Overhaul:** Replaced monolithic transcript text with lazy line rendering (`LazyVStack`), capped console history at 500 lines, added ▲/▼ command recall history, color-coded lines, and async network request cancellation.
+
+### Diagnostics & Security (jedPanicAnalyzer, jedTSSChecker & jedOSSecuCheck 4.1)
+- **jedPanicAnalyzer Expansion:** Expanded signature database from 14 to 38 entries, shifted log parsing to background threads, and added native report sharing.
+- **jedTSSChecker Refinements:** Added pull-to-refresh support with manual "Try Again" retries, offline mode data preservation, cached formatting properties, and request race prevention.
+- **jedOSSecuCheck 4.1:** Hardened app verification routines and updated core security protections.
+
+### Interface & Account Customization (jedUI 6.0)
+- **Profile & Setup Integration:** Profile photos sync directly into Settings, App Setup preserves custom accent colors, and jedAccount adds character limit counters, Remove Photo options, and unsaved change prompts.
+- **App Lock Verification:** Disabling App Lock now requires Face ID, Touch ID, or passcode authentication.
 
 ---
 
