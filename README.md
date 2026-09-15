@@ -2,8 +2,7 @@
 
 > What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 27.0
-**Codename:** jedIntelligence
+**Version:** 27.0 jedIntelligence
 **Developer:** jedPlatforms  
 
 `jedToolKit` is a modular diagnostics and utility suite designed for **jailed iOS devices** running **iOS 15 and later** — no jailbreak required.
