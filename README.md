@@ -94,6 +94,7 @@ Internet connection is required only for:
 - IPSW downloads
 - Firmware signing information
 - Application update metadata
+- jedHWChecker Wi-Fi testing
 
 Bluetooth permission is used exclusively for:
 - Bluetooth diagnostics
