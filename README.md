@@ -24,6 +24,9 @@
 
 ## Included Modules
 
+### jedAI (Beta)
+On-device intelligence module powered directly by Apple's Foundation Models framework. Features a flat themed conversation experience matching your accent color, dedicated chat modes (Diagnostics Assistant vs. General Chatbot), and automatic local chat history saved in Recents.
+
 ### jedRAMChecker
 Real-time physical memory footprint monitoring (`phys_footprint`), available allocation headroom (`os_proc_available_memory`), Mach kernel memory pressure tracking, live footprint sampling graphs, memory diagnostics summaries, and capability checks for native 64-bit address space, paid Apple Developer Extended Virtual Addressing entitlement (`com.apple.developer.kernel.extended-virtual-addressing`), Increased Memory Limit entitlement (`com.apple.developer.kernel.increased-memory-limit`), and Mach VM page statistics (Wired, Active, Inactive, Swap Compressed, and Purges).
 
@@ -62,9 +65,6 @@ Native update interface for checking the latest jedToolKit releases.
 
 ### jedPanicAnalyzer
 Analyze 38 iOS and macOS panic log patterns offline with background log parsing, single-pass signature compilation, native report sharing, and an intuitive overflow menu.
-
-### jedAI (Beta)
-On-device intelligence module powered directly by Apple's Foundation Models framework. Features a flat themed conversation experience matching your accent color, dedicated chat modes (Diagnostics Assistant vs. General Chatbot), and automatic local chat history saved in Recents.
 
 ### Icon Themer
 Customize Home Screen icons using Apple's Shortcuts app. Batch-create and install multiple themed icons at once.
