@@ -9,6 +9,19 @@
 
 ---
 
+## Legacy Version Updates
+
+### Version 26.4
+**Release Date:** September 15, 2026
+
+#### Software Update & Multi-Channel Support
+* **Dual Update Feeds:** Introduced `UpdateChannel` (`.stable` and `.legacy`) in `SoftwareUpdateChecker`, allowing users to switch between Stable and Legacy release tracks with dedicated remote update URLs.
+* **Persistent Channel State:** Your active channel selection is published via `@Published selectedChannel` and saved to `UserDefaults`, ensuring update checks (`checkForUpdate()`) automatically query the active remote feed across app launches.
+* **Header Channel Switcher:** Integrated a native `UISegmentedControl` directly into the view controller's table header for seamless track switching (`setChannel(_:)`) and instant re-polling.
+* **Context-Aware Status Cards:** Both the update notification card and the "up to date" status card now explicitly display which release channel is reporting status.
+
+---
+
 ## Included Modules
 
 ### jedRAMChecker
