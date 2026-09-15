@@ -110,8 +110,9 @@ Internet connection is required only for:
 - jedHWChecker Wi-Fi testing
 
 Bluetooth permission is used exclusively for:
-- Bluetooth diagnostics
-- Cellular and VoLTE testing
+- jedHWChecker Bluetooth testing
+- jedHWChecker Cellular and VoLTE testing
+- Battery & BT Accessories
 
 ---
 
