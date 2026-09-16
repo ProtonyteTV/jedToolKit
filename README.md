@@ -2,7 +2,7 @@
 
 > What started as a side project is now a growing toolkit for jailed iOS devices.
 
-**Version:** 27.0 jedIntelligence
+**Version:** 27.0.1 jedIntelligence
 **Developer:** jedPlatforms  
 
 `jedToolKit` is a modular diagnostics and utility suite designed for **jailed iOS devices** running **iOS 15 and later** — no jailbreak required.
@@ -25,7 +25,7 @@
 ## Included Modules
 
 ### jedAI (Beta)
-On-device intelligence module powered directly by Apple's Foundation Models framework. Features a flat themed conversation experience matching your accent color, dedicated chat modes (Diagnostics Assistant vs. General Chatbot), and automatic local chat history saved in Recents.
+On-device intelligence module powered directly by Apple's Foundation Models framework. Features a flat themed conversation experience matching your accent color, dedicated chat modes (Diagnostics Assistant vs. General Chatbot), automatic local chat history saved in Recents, and a Home Screen Recents widget for quickly returning to recent conversations.
 
 ### jedRAMChecker
 Real-time physical memory footprint monitoring (`phys_footprint`), available allocation headroom (`os_proc_available_memory`), Mach kernel memory pressure tracking, live footprint sampling graphs, memory diagnostics summaries, and capability checks for native 64-bit address space, paid Apple Developer Extended Virtual Addressing entitlement (`com.apple.developer.kernel.extended-virtual-addressing`), Increased Memory Limit entitlement (`com.apple.developer.kernel.increased-memory-limit`), and Mach VM page statistics (Wired, Active, Inactive, Swap Compressed, and Purges).
@@ -140,29 +140,31 @@ Bluetooth permission is used exclusively for:
 
 ---
 
-## What's New in 27.0
+## What's New in 27.0.1
 
-### jedAI Beta
-- **Redesigned Interface:** Flatter, cleaner design with flat fills and hairline strokes, automatically matching your chosen accent color.
-- **Smarter Formatting & Thinking:** Normalized markdown formatting and responses with a calmer on-device status indicator.
-- **Recents Tab:** Conversations are automatically written to on-device storage. Choose between Diagnostics Assistant or General Chatbot mode when creating a chat.
+### jedAI Recents Widget
 
-### Archive & Download Reliability (jedXIP & IPSW Downloader)
-- **jedXIP Fixes:** Resolved folder navigation issues, added swipe-to-rename/delete, duplicate name auto-numbering, unique extraction sandbox directories, and Recents clearing.
-- **IPSW Downloader:** Added automatic checksum verification retries, connection drop resumption, immediate download initiation, and direct failure alerts.
+- **New Home Screen Widget:** See your most recent jedAI conversations directly from the Home Screen.
+- **Conversation Details:** View the conversation mode, title, latest message, and when you last used it.
+- **Quick Access:** Tap a conversation to jump straight back into jedAI.
 
-### Performance & Engine Work (jedBenchmark 2 & jedTerminal)
-- **jedBenchmark 2:** Metal shaders are pre-compiled on startup, memory buffer allocation is unified across tests, and random number generation overhead is reduced.
-- **jedTerminal Overhaul:** Replaced monolithic transcript text with lazy line rendering (`LazyVStack`), capped console history at 500 lines, added ▲/▼ command recall history, color-coded lines, and async network request cancellation.
+### Refreshed Widget Design
 
-### Diagnostics & Security (jedPanicAnalyzer, jedTSSChecker & jedOSSecuCheck 4.1)
-- **jedPanicAnalyzer Expansion:** Expanded signature database from 14 to 38 entries, shifted log parsing to background threads, and added native report sharing.
-- **jedTSSChecker Refinements:** Added pull-to-refresh support with manual "Try Again" retries, offline mode data preservation, cached formatting properties, and request race prevention.
-- **jedOSSecuCheck 4.1:** Hardened app verification routines and updated core security protections.
+- **Expanded Title Style:** Updated the jedAI widget with a wider title style matching the app's large-title design.
+- **Tinted Icon Badges:** Conversation icons now use tinted rounded-square badges.
+- **Card-Style Rows:** Recent conversations are displayed using clean card-style layouts.
+- **Relative Timestamps:** Recent conversations show friendly timestamps such as “2h ago.”
 
-### Interface & Account Customization (jedUI 6.0)
-- **Profile & Setup Integration:** Profile photos sync directly into Settings, App Setup preserves custom accent colors, and jedAccount adds character limit counters, Remove Photo options, and unsaved change prompts.
-- **App Lock Verification:** Disabling App Lock now requires Face ID, Touch ID, or passcode authentication.
+### Live Widget Sync
+
+- **Automatic Updates:** New conversations, replies, and deleted conversations are automatically reflected in the widget.
+- **Recents Synchronization:** The Home Screen widget stays synchronized with your jedAI Recents.
+
+### Clearer Widget Troubleshooting
+
+- **Improved Error States:** Widget messages now distinguish between a synchronization issue and an installation or configuration issue.
+- **Easier Recovery:** Clearer guidance helps determine whether the widget needs to sync again or jedToolKit needs to be reinstalled.
+- **Sideloading Improvements:** Troubleshooting is clearer for users running sideloaded installations.
 
 ---
 
