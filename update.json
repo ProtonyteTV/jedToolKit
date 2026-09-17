@@ -1,5 +1,5 @@
 {
   "version": "27.0.1",
-  "changelog": "jedToolKit 27.0.1 adds all-new jedAI Widgets for your Home Screen.\n\n• jedAI Widgets: View recent conversations, titles, and timestamps directly from the Home Screen with adaptive layouts.\n• Visual Redesign: Clean card-style rows, tinted badges, and an expanded title style.\n• Live Sync: Automatic real-time updates for new, updated, or deleted chats.\n• Improved Troubleshooting: Clearer error guidance for sync, installation, and sideloading issues.\n\nThis update is recommended for all users.",
+  "changelog": "jedToolKit 27.0.1 introduces all-new jedAI Widgets for your Home Screen.\n\njedAI Widgets & Redesign: View recent conversations, titles, and timestamps directly from your Home Screen with adaptive layouts, clean card-style rows, tinted badges, and an expanded title style.\n\nLive Sync & Reliability: Automatic real-time updates for new, updated, or deleted chats, alongside clearer error guidance for sync, installation, and sideloading issues.\n\nThis update is recommended for all users.",
   "url": "https://github.com/ProtonyteTV/jedToolKit/releases"
 }
