@@ -3,6 +3,7 @@
 > What started as a side project is now a growing toolkit for jailed iOS devices.
 
 **Version:** 27.0.1 **(jedIntelligence)**
+**Release Date:** September 16, 2026  
 
 **Developer:** jedPlatforms  
 
