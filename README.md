@@ -10,7 +10,7 @@
 
 ---
 
- **Also on Android:** [jedToolKit 27.0.1](https://github.com/exosennnn/jedToolKit) (codename **jedIntelligence**). The Android app is **open source**; this repository covers the iOS version only.
+> **Also on Android:** [jedToolKit 27.0.1](https://github.com/exosennnn/jedToolKit) (codename **jedIntelligence**). The Android app is **open source**; this repository covers the iOS version only.
 
 ## What's New in v27.0.1
 
