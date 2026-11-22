@@ -44,26 +44,25 @@
 
 `jedToolKit` is organized into focused modules, each designed to handle a specific diagnostic, performance, security, or system-utility task.
 
-| Category         | Module                 | Description                                                                                                                                                 |
-| :--------------- | :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Intelligence** | **jedAI (Beta)**       | On-device diagnostic assistant powered by Apple Foundation Models, featuring dual chat modes, local conversation history, and a Home Screen Recents widget. |
-| **Diagnostics**  | **jedRAMChecker**      | Monitors memory usage in real time using `phys_footprint`, memory headroom, Mach VM statistics, and memory-pressure data.                                   |
-|                  | **jedPhoneInfo**       | Detailed device intelligence including per-core CPU usage, process and thread information, Metal GPU details, ANE capabilities, and hardware insights.      |
-|                  | **jedDiskChecker**     | Measures storage performance with live I/O monitoring, optimized test routines, and detailed performance logging.                                           |
-|                  | **jedHWChecker**       | Comprehensive hardware diagnostics covering 18 components, including cameras, audio, sensors, buttons, and battery health information.                      |
-| **Performance**  | **jedBenchmark 2**     | Advanced device benchmarking with dynamic hardware classification, Metal-accelerated workloads, RAM testing, and multi-core safety controls.                |
-| **Security**     | **jedOSSecuCheck 4.1** | Offline security and environment assessment with heuristic scanning, Fast and Deep Core profiles, runtime verification, and anti-tampering checks.          |
-|                  | **App Lock**           | Local passcode protection with optional Face ID or Touch ID authentication.                                                                                 |
-| **Utilities**    | **jedTerminal**        | Lightweight terminal environment with command history, command recall (`▲`/`▼`), a protected 500-line session buffer, and `URLSession` utilities.           |
-|                  | **IPSW Downloader**    | Firmware download utility with signing-status information, connection recovery, and automatic checksum verification and retry handling.                     |
-|                  | **jedTSSChecker**      | Firmware signing-status checker with live status updates, offline caching, and pull-to-refresh support.                                                     |
-|                  | **jedPanicAnalyzer**   | Offline panic-log analyzer supporting 38 iOS/macOS panic patterns with optimized signature matching.                                                        |
-|                  | **jedXIP**             | ZIP archive manager for creating, extracting, and managing archives with duplicate handling and collision-free file paths.                                  |
-|                  | **Icon Themer**        | Batch application icon customization through Apple Shortcuts integration.                                                                                   |
-|                  | **jedSysPatcher**      | Configuration-profile utility for managing supported OTA update-blocking configurations.                                                                    |
-|                  | **jedAccount**         | Local profile system with custom usernames, avatars, and module pinning.                                                                                    |
-|                  | **jedUpdateChecker**   | Native update checker for monitoring new `jedToolKit` releases.                                                                                             |
-
+| Category         | Module                 | Description                                                                                                                                                                                                                  |
+| :--------------- | :--------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Intelligence** | **jedAI (Beta)**       | Fully on-device assistant built on Apple's Foundation Models framework. Offers a **Diagnostics Assistant** mode that reads live device, storage, CPU, RAM, and system status (and can run jedBenchmark 2 on request) and a **General Chatbot** mode. Conversations are stored locally in jedAI Recents and feed the Home Screen widget. |
+| **Diagnostics**  | **jedRAMChecker**      | Monitors memory usage in real time using `phys_footprint`, memory headroom, Mach VM statistics, and memory-pressure data.                                                                                                    |
+|                  | **jedPhoneInfo**       | Detailed device intelligence including per-core CPU usage, process and thread information, Metal GPU details, ANE capabilities, and hardware insights.                                                                       |
+|                  | **jedDiskChecker**     | Measures storage performance with live I/O monitoring, optimized test routines, and detailed performance logging.                                                                                                            |
+|                  | **jedHWChecker**       | 18 guided hardware tests plus Battery Health Info. Covers display, brightness, touch, charger, physical buttons, biometrics, gyroscope, accelerometer, magnetometer, proximity, vibration, speaker, microphone, camera, LED flash, Wi-Fi, Bluetooth, and Cellular/VoLTE. Results are rolled into a single health score (pass, partial, fail). |
+| **Performance**  | **jedBenchmark 2**     | Lightweight benchmark suite covering CPU (single and multi-core), RAM, and Metal GPU workloads. Each test is scored against a 2500-point baseline, with dynamic hardware classification and multi-core safety controls.        |
+| **Security**     | **jedOSSecuCheck 4.1** | Offline security and environment assessment with heuristic scanning, **Fast** and **Deep Core** scan profiles, runtime verification, and detection of jailbreak environments, runtime tampering, and active debug hooks. On a compromised device the app falls back to **jedToolKit (Lite)** with a reduced toolset. |
+|                  | **App Lock**           | Local passcode protection with optional Face ID or Touch ID authentication.                                                                                                                                                  |
+| **Utilities**    | **jedTerminal Lite**   | Sandboxed terminal with command history, command recall (`▲`/`▼`), and a protected 500-line session buffer. Commands: `help`, `device`, `ping <host>`, `meminfo`, `df`, `ls`, `battery`, `uptime`, `date`, `jtkcheck`, `clear`. |
+|                  | **IPSW Downloader**    | Browses signed and unsigned firmware for your device (via the ipsw.me API) with in-app download management, resumable downloads, automatic retry, and SHA256 checksum verification.                                          |
+|                  | **jedTSSChecker**      | Shows which iOS versions Apple is currently signing for your device, with pull-to-refresh and Offline Mode awareness.                                                                                                        |
+|                  | **jedPanicAnalyzer**   | Offline panic-log analyzer with 38 bundled signatures loaded from `panic_signatures.json` and compiled once for fast matching.                                                                                               |
+|                  | **jedXIP**             | ZIP archive manager for creating, viewing, editing, and extracting archives with duplicate handling and collision-free file paths.                                                                                           |
+|                  | **Icon Themer**        | Batch home screen icon customization using WebClip-based configuration profiles (`.mobileconfig`) with your own photos, colors, or SF Symbols.                                                                                |
+|                  | **jedSysPatcher**      | Configuration-profile utility for installing the **OTA Update Blocker** and the **SSL & DoH Fix**.                                                                                                                           |
+|                  | **jedAccount**         | Local profile system with custom usernames, avatars, and module pinning. Nothing leaves the device.                                                                                                                          |
+|                  | **jedOSUpdateChecker** | Native update checker for new `jedToolKit` releases, with **Stable** and **Legacy** release channels.                                                                                                                         |
 
 ---
 
@@ -78,8 +77,17 @@
 ### Privacy Principles
 
 * **100% Sandbox Compliant** — Works within strict stock iOS limits.
-* **Offline-First** — Zero telemetry, zero tracking, and no collection of UDIDs, serial numbers, or personal data.
-* **Minimal Permissions** — Internet and Bluetooth access are restricted strictly to user-initiated diagnostic routines.
+* **Offline-First** — Offline Mode is on by default. Zero telemetry, zero tracking, no cloud sync, and no collection of UDIDs, serial numbers, or personal data.
+* **No Servers** — jedPlatforms does not operate any backend, so there is nowhere for user data to be sent.
+* **On-Device AI** — jedAI runs entirely on the device through Apple Intelligence. Prompts and conversations are never sent to jedPlatforms, Apple, or anyone else.
+* **Minimal Permissions** — Requested only when a feature needs them:
+  * **Network:** update checks, jedTSSChecker lookups, IPSW downloads, the Wi-Fi test in jedHWChecker, and the `ping` command in jedTerminal Lite.
+  * **Photos:** picking icons in Icon Themer.
+  * **Files:** importing and exporting panic logs and IPSW files, and creating, editing, and extracting ZIPs.
+  * **Biometrics:** the Biometric Test and App Lock.
+  * **Bluetooth:** the Bluetooth connectivity test.
+
+The full policy is available in the app under **Privacy Policy**.
 
 ---
 
@@ -87,30 +95,30 @@
 
 ### jedToolKit Core
 
-
+```
 jedToolKit Core
 ├── OS: iOS 15.0 or later
 └── Device: iPhone 6s or later
-
+```
 
 ### jedAI (Beta)
 
-
+```
 jedAI (Beta)
 ├── OS: iOS 26.0 or later
 ├── Device: iPhone 15 Pro or later
 └── Setup: Apple Intelligence enabled + on-device model downloaded
+```
 
 ---
 
 ## Tech Stack
 
 * **Language:** Swift 5+
-* **Frameworks:** SwiftUI, UIKit
+* **Frameworks:** SwiftUI, UIKit (hybrid `jedUI` engines), Foundation Models (jedAI)
 * **Low-Level Subsystems:** Darwin C APIs (`host_processor_info`, `task_threads`, `host_statistics64`, `task_info`), Metal API
 * **Developer:** jedPlatforms ([Website](https://jedplatforms.gt.tc))
 
 ---
 
 .--- / . / -.. / .. / .- / ....   / .-. / . / -..
-
