@@ -117,7 +117,7 @@ jedAI (Beta)
 * **Language:** Swift 5+
 * **Frameworks:** SwiftUI, UIKit (hybrid `jedUI` engines), Foundation Models (jedAI)
 * **Low-Level Subsystems:** Darwin C APIs (`host_processor_info`, `task_threads`, `host_statistics64`, `task_info`), Metal API
-* **Developer:** jedPlatforms ([Website](https://jedplatforms.gt.tc))
+* **Developer:** jedPlatforms ([Website](https://jedplatforms.vercel.app))
 
 ---
 
